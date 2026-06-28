@@ -1,0 +1,45 @@
+# ============================================================
+# SECURITY — never commit secrets (Windows stores keys in plaintext)
+# ============================================================
+# Env / config files that may contain API keys
+.env
+.env.*
+*.env
+config.yaml
+config.yml
+config.local.*
+secrets.*
+*secret*
+*.secret
+
+# Key material
+*.key
+*.pem
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+*.ppk
+
+# Hermes / provider credential caches that could land here by accident
+**/credentials*
+**/*apikey*
+**/*api_key*
+**/*token*
+
+# ============================================================
+# Never commit the Hermes agent install tree (it lives in ~/.hermes)
+# ============================================================
+.hermes/
+hermes-agent/
+
+# ============================================================
+# OS / editor noise
+# ============================================================
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
