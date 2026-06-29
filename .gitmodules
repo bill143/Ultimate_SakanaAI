@@ -1,0 +1,6 @@
+[submodule "path/to/fugu"]
+	path = path/to/fugu
+	url = git@github.com:SakanaAI/fugu.git
+[submodule "fugu"]
+	path = fugu
+	url = git@github.com:SakanaAI/fugu.git
